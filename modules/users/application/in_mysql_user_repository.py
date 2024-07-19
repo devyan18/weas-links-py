@@ -1,5 +1,5 @@
-from modules.users.user_entity import User
-from modules.users.user_repository import UserRepository
+from modules.users.domain.user_entity import User
+from modules.users.domain.user_repository import UserRepository
 from db.connect_to_mysql import conn
 from modules.utils.hashing import hash_str
 

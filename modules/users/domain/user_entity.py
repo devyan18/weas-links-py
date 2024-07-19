@@ -1,5 +1,4 @@
 from modules.utils.uid import generate_uid
-from modules.utils.hashing import hash_str
 
 class User ():
     def __init__(self, name: str, email: str, password: str, id: str = generate_uid()):

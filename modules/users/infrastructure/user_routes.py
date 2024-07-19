@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 
-from modules.users.user_entity import User
-from modules.users.in_mysql_user_repository import InMySqlUserRepository
+from modules.users.domain.user_entity import User
+from modules.users.application.in_mysql_user_repository import InMySqlUserRepository
 
 UserRoutes = Blueprint('users', __name__, url_prefix='/users')
 repository = InMySqlUserRepository()
